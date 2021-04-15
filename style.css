@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "goodtiming";
+    src: url("img/good\ timing\ bd.ttf") format("truetype");
+   }
+body,html{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:100vh;
+    margin: 0;
+    /* font-family: "goodtiming"; */
+    
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    width:25%;
+   
+}
+.navlist li a{
+text-decoration: none;
+color:black;
+}
+.navheader{
+    display: flex;
+    justify-content: space-between;
+    padding-top:1%;
+    padding-left:1%;
+    padding-right:1%;
+    padding-bottom: 1%;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    height:5%;
+    width: 98%;
+    position: fixed;
+    z-index: 1000;
+    font-family: "goodtiming";
+}
+.navheader span{
+font-size: xx-large;
+font-weight: bold;
+}
+.heropresentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('img/kobu-agency-67L18R4tW_w-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    
+}
+.heropresentation h1{
+    font-family: "goodtiming";
+}
+.heropresentation p{
+    width:50%;
+    text-align: center;
+    font-family: "goodtiming";
+}
+.heroheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.herolinkscontainer{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.herolinks {
+   color:white !important;
+}
+.aboutcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:2%;
+}
+#about{
+    font-family: "goodtiming";
+    padding-top: 10%;
+    padding-bottom: 2%;
+    height: 100%;
+    min-height: 100vh;
+    /* transform: translateY(-10%); */
+    background-image: url(img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white
+
+}
+.aboutpresentation{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 10px rgba(156,82,180,0.58);
+    -webkit-box-shadow: 0px 0px 5px 10px rgba(156,82,180,0.58);
+    -moz-box-shadow: 0px 0px 5px 10px rgba(156,82,180,0.58);
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 2%;
+}
+.aboutpresentation h3{
+    text-align: center;
+}
+#about h2{
+    text-align: center;
+}
+#about hr{
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+#about img{
+    border-radius: 50%;
+    margin-top:2%
+}
+.imageprojetscontainer{
+    display: flex;
+    width:100%;
+    height:80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.figprojets{
+    height: 25%;
+    width:40%;  
+    margin: 0;
+    display: flex;
+    margin-bottom: 2%;
+}
+.figprojets img{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.figprojets figcaption{
+    display: none;
+    position: absolute;
+}
+.figprojets:hover figcaption{
+    display: flex;
+    background-color: rgba(156,82,180,0.58);
+    box-sizing: border-box;
+    height: 40.1%;
+    width:40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#projets{
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 5%;
+    font-family: "goodtiming";
+    background-image: url("img/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#projets h2{
+    text-align: center;
+}
+.langagescontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.linkgit:visited{
+    text-decoration: none;
+    color:black
+}
+a{
+    text-decoration: none;
+    /* color:black */
+}
+#contact{
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 5%;
+    font-family: "goodtiming";
+    background-image: url("img/alina-grubnyak-kM0Ykc1gv_w-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#contact h2{
+    text-align: center;
+}
+.fieldsetcontact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(156,82,180,0.58);
+    border-radius: 50px;
+    width:50%;
+    border: unset;
+}
+#contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+}
+.fieldsetcontact input{
+    width:35%;
+    border-radius:5px;
+    
+}
+.fieldsetcontact textarea{
+    width:35%;
+    border-radius:5px;
+}
+footer{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    font-family: "goodtiming";
+
+}
+.footerlist{
+    color:white;
+    list-style-type: none;
+}
+.footerlist li a{
+    color: white;
+}
+.footerlink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:15%
+}
