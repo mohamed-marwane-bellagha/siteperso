@@ -22,6 +22,35 @@ body,html{
     width:25%;
    
 }
+.dropdown {
+    position: relative;
+    display: none;
+    /* display: inline-block; */
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:15%
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropbtn {
+    background-color:transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
 .navlist li a{
 text-decoration: none;
 color:black;
@@ -108,11 +137,23 @@ font-weight: bold;
     -moz-box-shadow: 0px 0px 5px 10px rgba(156,82,180,0.58);
     padding: 1%;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(189, 217, 230, 0.75);
     margin-top: 2%;
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .aboutpresentation h3{
     text-align: center;
+}
+.aboutcptences{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutcptences img{
+    width:10%;  
 }
 #about h2{
     text-align: center;
@@ -122,7 +163,7 @@ font-weight: bold;
     margin-right: auto;
     width:50%;
 }
-#about img{
+.photocv{
     border-radius: 50%;
     margin-top:2%
 }
@@ -140,6 +181,8 @@ font-weight: bold;
     margin: 0;
     display: flex;
     margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
 }
 .figprojets img{
     width:100%;
@@ -152,15 +195,20 @@ font-weight: bold;
 }
 .figprojets:hover figcaption{
     display: flex;
-    background-color: rgba(156,82,180,0.58);
-    box-sizing: border-box;
-    height: 40.1%;
+    /* background-color: rgba(156,82,180,0.58); */
+    /* box-sizing: border-box; */
+    height: 40%;
     width:40%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color:white
     
 }
+.figcaptionheader{
+    text-align: center;
+}
+
 #projets{
     height: 100%;
     min-height: 100vh;
@@ -182,9 +230,13 @@ font-weight: bold;
     margin-top: 2%;
     margin-bottom: 2%;
 }
+.linkgit{
+    text-decoration: none;
+    color:red
+}
 .linkgit:visited{
     text-decoration: none;
-    color:black
+    color:red;
 }
 a{
     text-decoration: none;
@@ -212,6 +264,7 @@ a{
     border-radius: 50px;
     width:50%;
     border: unset;
+    height:40%
 }
 #contact form{
     display: flex;
@@ -248,4 +301,59 @@ footer{
     justify-content: space-between;
     align-items: center;
     width:15%
+}
+@media (max-width:1100px){
+    .navlist{
+        width:35%
+    }
+    #about img{
+        width:30%
+    }
+    .footerlink{
+        width:25%
+    }
+    .figprojets{
+        width:85%
+    }
+}
+@media (max-width:900px){
+    .aboutcontainer{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navlist{
+        width:45%;
+    }
+}
+@media (max-width:700px){
+    .herolinkscontainer{
+        width:25%
+    }
+}
+@media (max-width:500px){
+    .navlist{
+        width:65%
+    }
+    .footerlink{
+        width:35%
+    }
+    .figcaptionheader{
+        display: none;
+    }
+}
+@media (max-width:767px){
+    .navlist{
+       display: none;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .dropdown-content a:hover {background-color: #ddd;}
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .footerlink{
+        width:40%
+    }
 }
